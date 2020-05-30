@@ -35,7 +35,7 @@ class PlotWrapper:
         self.run()
 
         time = strftime("_%d-%m-%H:%M:%S", gmtime())
-        plt.savefig(os.path.join('grafics', (fileName + time + '.png')), dpi=200)
+        plt.savefig(os.path.join('graphics', (fileName + time + '.png')), dpi=200)
         plt.close(self.fig)
 
     def add_text(self, text):
